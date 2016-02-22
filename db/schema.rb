@@ -11,10 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160222185929) do
+ActiveRecord::Schema.define(version: 20160222190323) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "body_measures", force: :cascade do |t|
+    t.integer  "customer_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "body_measures", ["customer_id"], name: "index_body_measures_on_customer_id", using: :btree
 
   create_table "customers", force: :cascade do |t|
     t.string   "first_name"
@@ -38,5 +46,6 @@ ActiveRecord::Schema.define(version: 20160222185929) do
     t.datetime "updated_at",  null: false
   end
 
+  add_foreign_key "body_measures", "customers"
   add_foreign_key "customers", "users"
 end
