@@ -1,1 +1,7 @@
 <h1>Hola</h1>
+
+<%= link_to 'Nuevo cliente', new_customer_path %>
+
+<% @customers.each do |customer| %>
+	<h3><%= link_to customer.first_name, customer_path(customer) %></h3>
+<% end %>

@@ -68,7 +68,6 @@ GEM
     mime-types (2.99.1)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
-    nested_form (0.3.2)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
     pg (0.18.4)
@@ -138,7 +137,6 @@ DEPENDENCIES
   bootstrap-sass
   coffee-rails (~> 4.1.0)
   jquery-rails
-  nested_form
   pg (~> 0.15)
   rails (= 4.2.5.1)
   sass-rails (~> 5.0)

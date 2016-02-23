@@ -1,4 +1,5 @@
 class CustomersController < ApplicationController
+  before_action :get_customer, only: [:show, :edit, :update]
   
   def index
     @customers = Customer.all
@@ -12,21 +13,18 @@ class CustomersController < ApplicationController
     @customer = Customer.new(customer_params)
 
     if @customer.save
+      redirect_to customers_path
     else
     end
   end
 
   def edit
-    get_customer
   end
 
   def show
-    get_customer
   end
 
   def update
-    get_customer
-
   end
 
   private
@@ -37,7 +35,8 @@ class CustomersController < ApplicationController
 
     def customer_params
       params.require(:customer).permit(
-        :first_name, :second_name, :last_names, :email,
+        :first_name, :second_name, :last_names, :email, :phone_number,
+        :user_id, :status, 
 
         body_measures_attributes: [
           :id, :customer_id, :talla_blusa, :talla_pantalon, :talla_delantero,
