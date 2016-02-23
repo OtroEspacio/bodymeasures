@@ -1,7 +1,21 @@
-<h1>Hola</h1>
+<div class="row">
+	<div class="col-md-6">
+		<div class="text-center">
+			<h2>Clientes y Medidas</h2>
+		</div>
+	</div>
+</div>
 
-<%= link_to 'Nuevo cliente', new_customer_path %>
-
-<% @customers.each do |customer| %>
-	<h3><%= link_to customer.first_name, customer_path(customer) %></h3>
-<% end %>
+<div class="row">
+	<div class="col-md-8">
+		<h3>Listado de clientes</h3>
+		<ul>
+			<% @customers.each do |customer| %>
+				<li><%= link_to customer.first_name, customer_path(customer) %></li>
+			<% end %>
+		</ul>
+	</div>
+	<div class="col-md-4">
+		<%= link_to 'Nuevo cliente', new_customer_path, class: 'btn btn-primary btn-lg' %>
+	</div>
+</div>
