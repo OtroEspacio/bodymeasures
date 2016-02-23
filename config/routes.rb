@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   
-  root 'welcome#index'
+  root 'customers#index'
 
-  resources :users do
+  #resources :users do
     resources :customers
-  end
+  #end
   
 end
