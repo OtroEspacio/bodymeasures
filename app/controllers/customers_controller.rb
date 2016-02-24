@@ -42,12 +42,12 @@ class CustomersController < ApplicationController
 
         body_measures_attributes: [
           :id, :customer_id, :talla_blusa, :talla_pantalon, :talla_delantero,
-          :talle_trasero, :espalda, :hombro_c_de_busto, :hombro_al_de_busto,
-          :hombro_s_de_busto, :hombro_m_inf_de_busto, :cintura_m_de_cadera,
-          :cintura_l_de_manga_pecho, :cintura_c_de_manga_pecho, :cintura_l_de_m_corta,
-          :cintura_c_de_m_corta, :cintura_l_de_manga_3_4, :cintura_c_de_manga_3_4,
-          :cintura_l_de_blusa, :escote_l_de_rodilla, :escote_c_de_rodilla, :escote_l_de_t,
-          :escote_l_total, :escote_c_de_bota, :nota, :_destroy
+          :talle_trasero, :espalda, :hombro, :c_de_busto, :al_de_busto,
+          :s_de_busto, :m_inf_de_busto, :cintura, :m_de_cadera,
+          :l_de_manga_pecho, :c_de_manga_pecho, :l_de_m_corta,
+          :c_de_m_corta, :l_de_manga_3_4, :c_de_manga_3_4,
+          :l_de_blusa, :escote, :l_de_rodilla, :c_de_rodilla, :l_de_t,
+          :l_total, :c_de_bota, :nota, :_destroy
         ]
       )
     end
