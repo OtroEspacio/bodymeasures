@@ -1,9 +1,115 @@
 <div class="row">
+	<div class="float-left">
+		<%= link_to 'Regresar', customers_path %>
+	</div>
 	<div class="text-center">
 		<h3>Medidas de <%= @customer.pretty_name %></h3>
 	</div>
 </div>
 
 <div class="row">
-	
+	<div class="col-md-2">
+		<h4>talla blusa</h4>
+		<p><%= @customer.first_body_measure.talla_blusa %></p>
+	</div>
+	<div class="col-md-2">
+		<h4>talla pantalon</h4>
+		<p><%= @customer.first_body_measure.talla_pantalon %></p>
+	</div>
+	<div class="col-md-2">
+		<h4>talla delantero</h4>
+		<p><%= @customer.first_body_measure.talla_delantero %></p>
+	</div>
+	<div class="col-md-2">
+		<h4>talle trasero</h4>
+		<p><%= @customer.first_body_measure.talle_trasero %></p>
+	</div>
+	<div class="col-md-2">
+		<h4>espalda</h4>
+		<p><%= @customer.first_body_measure.espalda %></p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-2">
+		<h4>c de busto</h4>
+		<p><%= @customer.first_body_measure.hombro_c_de_busto %></p>
+	</div>
+	<div class="col-md-2">
+    <h4>Al de busto</h4>
+		<p><%= @customer.first_body_measure.hombro_al_de_busto %></p>
+	</div>
+	<div class="col-md-2">
+    <h4>s de busto</h4>
+		<p><%= @customer.first_body_measure.hombro_s_de_busto %></p>
+	</div>
+	<div class="col-md-2">
+    <h4>m inf de busto</h4>
+		<p><%= @customer.first_body_measure.hombro_m_inf_de_busto %></p>
+	</div>
+	<div class="col-md-2">
+    <h4>m de cadera</h4>
+		<p><%= @customer.first_body_measure.cintura_m_de_cadera %></p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-2">
+    <h4>l de manga pecho</h4>
+		<p><%= @customer.first_body_measure.cintura_l_de_manga_pecho %></p>
+	</div>
+	<div class="col-md-2">
+    <h4>c de manga pecho</h4>
+		<p><%= @customer.first_body_measure.cintura_c_de_manga_pecho %></p>
+	</div>
+	<div class="col-md-2">
+    <h4>l de m corta</h4>
+		<p><%= @customer.first_body_measure.cintura_l_de_m_corta %></p>
+	</div>
+	<div class="col-md-2">
+    <h4>c de m corta</h4>
+		<p><%= @customer.first_body_measure.cintura_c_de_m_corta %></p>
+	</div>
+	<div class="col-md-2">
+    <h4>l de manga <sup>3/4</sup></h4>
+		<p><%= @customer.first_body_measure.cintura_l_de_manga_3_4 %></p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-2">
+    <h4>c de manga <sup>3/4</sup></h4>
+		<p><%= @customer.first_body_measure.cintura_c_de_manga_3_4 %></p>
+	</div>
+	<div class="col-md-2">
+    <h4>l de blusa</h4>
+		<p><%= @customer.first_body_measure.cintura_l_de_blusa %></p>
+	</div>
+	<div class="col-md-2">
+    <h4>l de rodilla</h4>
+		<p><%= @customer.first_body_measure.escote_l_de_rodilla %></p>
+	</div>
+	<div class="col-md-2">
+    <h4>c de rodilla</h4>
+		<p><%= @customer.first_body_measure.escote_c_de_rodilla %></p>
+	</div>
+	<div class="col-md-2">
+    <h4>l de t</h4>
+		<p><%= @customer.first_body_measure.escote_l_de_t %></p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-2">
+    <h4>l total</h4>
+		<p><%= @customer.first_body_measure.escote_l_total %></p>
+	</div>
+	<div class="col-md-2">
+    <h4>c de bota</h4>
+		<p><%= @customer.first_body_measure.escote_c_de_bota %></p>
+	</div>
+	<div class="col-md-2">
+    <h4>nota</h4>
+		<p><%= @customer.first_body_measure.nota %></p>
+	</div>
 </div>
