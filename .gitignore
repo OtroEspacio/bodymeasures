@@ -3,3 +3,7 @@
 log/
 !/log/.keep
 tmp/
+
+Vagrantfile
+install_software.sh
+.vagrant/
