@@ -21,6 +21,7 @@ class CustomersController < ApplicationController
   end
 
   def edit
+  # put nothing
   end
 
   def show
